@@ -19,7 +19,7 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
+  <link href="css/resume.css" rel="stylesheet">
 
 </head>
 
@@ -174,9 +174,9 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
+        <h2 class="mb-5">Compétences</h2>
 
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+        <div class="subheading mb-3">Langages de programmation &amp; outils</div>
         <ul class="list-inline dev-icons">
           <li class="list-inline-item">
             <i class="fab fa-html5"></i>
@@ -216,20 +216,17 @@
           </li>
         </ul>
 
-        <div class="subheading mb-3">Workflow</div>
+        <div class="subheading mb-3">Autres</div>
         <ul class="fa-ul mb-0">
           <li>
-            <i class="fa-li fa fa-check"></i>
-            Mobile-First, Responsive Design</li>
+            <i class="fa-li fa fa-language"></i>
+            Anglais courant</li>
           <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Browser Testing &amp; Debugging</li>
+            <i class="fa-li fa fa-desktop"></i>
+            Bureautique (Word, Powerpoint, Excell)</li>
           <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum</li>
+            <i class="fa-li fa fa-code-branch"></i>
+            Git</li>
         </ul>
       </div>
     </section>
@@ -248,35 +245,98 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
       <div class="w-100">
-        <h2 class="mb-5">Awards &amp; Certifications</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Google Analytics Certified Developer</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Mobile Web Specialist - Google Certification</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            2<sup>nd</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - James Buchanan High School - Hackathon 2006</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            3<sup>rd</sup>
-            Place - James Buchanan High School - Hackathon 2005</li>
-        </ul>
+        <h2 class="mb-5">Projets</h2>
+        
+        <button class="row no-gutters bg-light position-relative" onclick="location.href='https://gamagora.itch.io/the-light';">
+            <div class="col-md-6 mb-md-0 p-md-4">
+              <img src="img/banner-TheLight.png" class="w-100" alt="Logo The Light">
+            </div>
+            <div class="col-md-6 position-static p-4 pl-md-0">
+              <h5 class="mt-0">The light</h5>
+              <p>Un jeu de plateforme 2D réalisé en 3 mois à Gamagora avec une équipe de 16 personnes. On y controle Legba, une poupée vaudou projetant de la lumière avec ses yeux. Il doit utiliser son pouvoir pour résoudre des énigmes et progresser à travers les bois.</p>
+            </div>
+        </button>
+        <br>
+        <button class="row no-gutters bg-light position-relative" data-toggle="modal" data-target="#modal-SpaceJourney">
+            <div class="col-md-6 mb-md-0 p-md-4">
+              <img src="img/banner-SpaceJourney.png" class="w-100" alt="Logo Space Journey">
+            </div>
+            <div class="col-md-6 position-static p-4 pl-md-0">
+              <h5 class="mt-0">A space journey</h5>
+              <p>Un petit jeu d'exploration spatiale avec une physique de vaisseau où l'on peut tirer sur des asteroïdes et explorer la surface d'une planète. Jeu réalisé en Licence informatique avec 2 autres étudiants. </p>
+            </div>
+        </button>
+        <br>
+        <button class="row no-gutters bg-light position-relative" data-toggle="modal" data-target="#modal-Surfaces">
+            <div class="col-md-6 mb-md-0 p-md-4">
+              <img src="img/banner-PlaceHolder.png" class="w-100" alt="Placeholder">
+            </div>
+            <div class="col-md-6 position-static p-4 pl-md-0">
+              <h5 class="mt-0">Animation de surface d'océan</h5>
+              <p>Projet d'orientation en Master. Réalisation d'un programme permettant de tester les différentes techniques d'animation d'océan, notamment par simulation de trains de vague et par somme de bruits.</p>
+            </div>
+        </button>
+        <br>
+        <button class="row no-gutters bg-light position-relative" data-toggle="modal" data-target="#modal-Figure">
+            <div class="col-md-6 mb-md-0 p-md-4">
+              <img src="img/banner-PlaceHolder.png" class="w-100" alt="Placeholder">
+            </div>
+            <div class="col-md-6 position-static p-4 pl-md-0">
+              <h5 class="mt-0">Figure</h5>
+              <p>Serious game visant à faire apprendre les figures de style au collégiens à travers les figures politiques. Le jeu est développé sous Unity et déployé sur mobile.</p>
+            </div>
+        </button>
+
+        <!-- Modals -->
+        <div class="modal fade" id="modal-SpaceJourney" tabindex="-1" role="dialog" aria-labelledby="modal-SpaceJourney-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal-SpaceJourney-label">Space Journey</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Ceci est la modal de Space Journey
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="modal-Surfaces" tabindex="-1" role="dialog" aria-labelledby="modal-Surface-label" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal-Surface-label">Surfaces</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Ceci est la modal de Surfaces
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="modal-Figure" tabindex="-1" role="dialog" aria-labelledby="modal-Figure-label" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modal-Figure-label">Figures</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Ceci est la modal de Figures
+                  </div>
+                </div>
+              </div>
+            </div>
+        <!-- End Modals -->
+
       </div>
     </section>
 
