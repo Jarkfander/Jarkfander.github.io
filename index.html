@@ -29,7 +29,7 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Florent Dupont</span>
       <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile2.jpg" alt="">
       </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -178,27 +178,51 @@
         <h2 class="mb-5">Compétences</h2>
 
         <div class="subheading mb-3">Langages de programmation &amp; outils</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <p>C/C++</p>
+        <ul class="fa-ul mb-2">
+          <li class="mb-1">
+            <img src="img/logo-cpp.png"
+                 alt="logo langage C plus plus"
+                 style="width: 20px;height: 20px;"></img>
+            C++
           </li>
-          <li>
-            <p>C#</p>
+          <li class="mb-1">
+            <img src="img/logo-c.png"
+                 alt="logo langage C"
+                 style="width: 20px;height: 20px;"></img>
+            C
           </li>
-          <li">
-            <p>OpenCV</p>
+          <li class="mb-1">
+            <img src="img/logo-cs.png"
+                  alt="logo langage C sharp"
+                  style="width: 20px;height: 20px;"></img>
+            C#
           </li>
-          <li>
-            <p>OpenGL & GLSL</p>
+          <li class="mb-1">
+            <img src="img/logo-opencv.png"
+                  alt="logo open cv"
+                  style="width: 20px;height: 20px;"></img>
+            OpenCV
           </li>
-          <li>
-            <p>Unity 3D</p>
+          <li class="mb-1">
+            <img src="img/logo-opengl.png"
+                  alt="logo openGL"
+                  style="width: 20px;height: 20px;"></img>
+            OpenGL
           </li>
-          <li>
-            <p>Visual Studio Code</p>
+          <li class="mb-1">
+            <img src="img/logo-unity.png"
+                  alt="logo Unity"
+                  style="width: 20px;height: 20px;"></img>
+            Unity 3D
+          </li>
+          <li class="mb-1">
+            <img src="img/logo-vsc.png"
+                  alt="logo visual studio code"
+                  style="width: 20px;height: 20px;"></img>
+            Visual Studio Code
           </li>
         </ul>
-
+        <br>
         <div class="subheading mb-3">Autres</div>
         <ul class="fa-ul mb-0">
           <li>
@@ -251,7 +275,7 @@
         <br>
         <button class="row no-gutters bg-light position-relative" data-toggle="modal" data-target="#modal-Surfaces">
             <div class="col-md-6 mb-md-0 p-md-4">
-              <img src="img/banner-PlaceHolder.png" class="w-100" alt="Placeholder">
+              <img src="img/banner-Surfaces.png" class="w-100" alt="Placeholder">
             </div>
             <div class="col-md-6 position-static p-4 pl-md-0">
               <h5 class="mt-0">Animation de surface d'océan</h5>
@@ -268,6 +292,7 @@
               <p>Serious game visant à faire apprendre les figures de style au collégiens à travers les figures politiques. Le jeu est développé sous Unity et déployé sur mobile.</p>
             </div>
         </button>
+        <br>
         <button class="row no-gutters bg-light position-relative" data-toggle="modal" data-target="#modal-Bazalt">
           <div class="col-md-6 mb-md-0 p-md-4">
             <img src="img/banner-PlaceHolder.png" class="w-100" alt="Placeholder">
@@ -305,7 +330,12 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  Ceci est la modal de Surfaces
+                    <h5>Vidéo de vulgarisation du projet</h5>
+                    <video controls width="100%"> 
+                      <source src="media/SurfaceOcean_Bierme_Dupont.mkv" />
+                      <!-- Texte alternatif en cas de non prise en charge de la balise video -->
+                      <p class="warning">Le format *.mkv n'est pas pris en charge par votre navigateur</p>
+                    </video>
                 </div>
               </div>
             </div>
@@ -321,7 +351,11 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                    Ceci est la modal de Figures
+                    <video controls width="100%"> 
+                        <source src="media/Figure.mp4" />
+                        <!-- Texte alternatif en cas de non prise en charge de la balise video -->
+                        <p class="warning">Le format *.mp4 n'est pas pris en charge par votre navigateur</p>
+                      </video>
                   </div>
                 </div>
               </div>
