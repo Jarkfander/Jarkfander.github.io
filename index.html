@@ -289,10 +289,83 @@
 
                 <h3 class="mb-2">2019</h3>
 
-                <div project-include="robot"></div>
+                <!-- PROJECT : RAYTRACING -->
+                <button class="row no-gutters bg-light position-relative" data-toggle="modal"
+                    data-target="#modal-Raytracing">
+                    <div class="col-md-3 mb-md-0 p-md-2">
+                        <img src="img/banner-Raytracing.png" class="w-100" alt="Rendu">
+                    </div>
+                    <div class="col-md-9 position-static p-1 pl-md-0">
+                        <h5 class="mt-0">Rendu en raytracing</h5>
+                        <p>Projet réalisé en Master de rendu raytracing sur CPU et en temps réel sur GPU avec OpenGL.</p>
+                    </div>
+                </button>
+                <div class="modal fade" id="modal-Raytracing" tabindex="-1" role="dialog"
+                    aria-labelledby="modal-Raytracing-label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modal-Raytracing-label">Rendu en raytracing</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h5>Rendu sur CPU</h5>
+                                <p>Rendu obtenu avec un intégrateur de Monte Carlo, 1 rebond de lumière. Distribution uniforme des rayons.</p>
+                                <img src="img/raytracing.png" class="w-100" alt="Rendu">
+                                <br>
+                                <h5>Rendu sur GPU à l'aide d'un fragment shader</h5>
+                                <video controls width="100%">
+                                    <source src="media/raytracingGPU.mp4" />
+                                    <!-- Texte alternatif en cas de non prise en charge de la balise video -->
+                                    <p class="warning">Le format *.mp4 n'est pas pris en charge par
+                                        votre navigateur</p>
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!---------------------->
 
-                
+                <!-- PROJECT : ROBOT -->
+                <button class="row no-gutters bg-light position-relative" data-toggle="modal"
+                    data-target="#modal-Robot">
+                    <div class="col-md-3 mb-md-0 p-md-2">
+                        <img src="img/banner-Robot.png" class="w-100" alt="Robot">
+                    </div>
+                    <div class="col-md-9 position-static p-1 pl-md-0">
+                        <h5 class="mt-0">Animation d'un robot avec OpenGL</h5>
+                        <p>Projet réalisé en Master : animation et shading d'un robot avec OpenGL.</p>
+                    </div>
+                </button>
+                <div class="modal fade" id="modal-Robot" tabindex="-1" role="dialog"
+                    aria-labelledby="modal-Robot-label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modal-Robot-label">Animtation d'un robot avec OpenGL</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h5>Démo de l'application</h5>
+                                <video controls width="100%">
+                                    <source src="media/robot.mp4" />
+                                    <!-- Texte alternatif en cas de non prise en charge de la balise video -->
+                                    <p class="warning">Le format *.mp4 n'est pas pris en charge par
+                                        votre navigateur</p>
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!---------------------->
 
+                <!-- PROJECT : GEOMETRIE -->
                 <button class="row no-gutters bg-light position-relative" data-toggle="modal"
                     data-target="#modal-Geometrie">
                     <div class="col-md-3 mb-md-0 p-md-2">
@@ -303,8 +376,26 @@
                         <p>Divers projets réalisés en Master liés à la géométrie en 3D.</p>
                     </div>
                 </button>
+                <div class="modal fade" id="modal-Geometrie" tabindex="-1" role="dialog"
+                    aria-labelledby="modal-Geometrie-label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modal-SpaceJourney-label">Geometrie 3D</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                [SECTION EN COURS DE REDACTION]
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <br>
+                <!---------------------->
 
+                <!-- PROJECT : SURFACES -->
                 <button class="row no-gutters bg-light position-relative" data-toggle="modal"
                     data-target="#modal-Surfaces">
                     <div class="col-md-6 mb-md-0 p-md-4">
@@ -320,90 +411,6 @@
                     </div>
                 </button>
                 <br>
-
-                <button class="row no-gutters bg-light position-relative" data-toggle="modal"
-                    data-target="#modal-Figures">
-                    <div class="col-md-3 mb-md-0 p-md-2">
-                        <img src="img/banner-Figures.png" class="w-100" alt="Figures">
-                    </div>
-                    <div class="col-md-9 position-static p-1 pl-md-0">
-                        <h5 class="mt-0">Figures</h5>
-                        <p>Une application de quizz faite sous Unity pour permettre aux élèves de
-                            secondaire d'apprendre les figures de style au travers des figures
-                            politiques.</p>
-                    </div>
-                </button>
-                <br>
-
-                <h3 class="mb-2">2018</h3>
-
-                <button class="row no-gutters bg-light position-relative" data-toggle="modal"
-                    data-target="#modal-SpaceJourney">
-                    <div class="col-md-6 mb-md-0 p-md-4">
-                        <img src="img/banner-SpaceJourney.png" class="w-100" alt="Logo Space Journey">
-                    </div>
-                    <div class="col-md-6 position-static p-4 pl-md-0">
-                        <h5 class="mt-0">A space journey</h5>
-                        <p>Un prototype de jeu d'exploration spatiale avec une physique de vaisseau où
-                            l'on peut tirer
-                            sur des asteroïdes et explorer la surface d'une planète.</p>
-                    </div>
-                </button>
-                <br>
-
-                <h3 class="mb-2">2017</h3>
-
-                <button class="row no-gutters bg-light position-relative"
-                    onclick="window.open('https://gamagora.itch.io/the-light')">
-                    <div class="col-md-6 mb-md-0 p-md-4">
-                        <img src="img/banner-TheLight.png" class="w-100" alt="Logo The Light">
-                    </div>
-                    <div class="col-md-6 position-static p-4 pl-md-0">
-                        <h5 class="mt-0">The light</h5>
-                        <p>Un jeu de plateforme 2D réalisé en 3 mois à Gamagora avec une équipe de 16
-                            personnes. On y
-                            controle Legba, une poupée vaudou projetant de la lumière avec ses yeux. Il
-                            doit utiliser
-                            son pouvoir pour résoudre des énigmes et progresser à travers les bois.</p>
-                    </div>
-                </button>
-                <br>
-
-                <!-- Modals -->
-                <div class="modal fade" id="modal-SpaceJourney" tabindex="-1" role="dialog"
-                    aria-labelledby="modal-SpaceJourney-label" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="modal-SpaceJourney-label">Space Journey</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                Ceci est la modal de Space Journey
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal fade" id="modal-Geometrie" tabindex="-1" role="dialog"
-                    aria-labelledby="modal-Geometrie-label" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="modal-SpaceJourney-label">Geometrie 3D</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                Ceci est la modal de geometrie
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="modal fade" id="modal-Surfaces" tabindex="-1" role="dialog"
                     aria-labelledby="modal-Surface-label" aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
@@ -418,16 +425,31 @@
                             <div class="modal-body">
                                 <h5>Vidéo de vulgarisation du projet</h5>
                                 <video controls width="100%">
-                                    <source src="media/SurfaceOcean_Bierme_Dupont.mkv" />
+                                    <source src="media/SurfaceOcean_Bierme_Dupont.mp4" />
                                     <!-- Texte alternatif en cas de non prise en charge de la balise video -->
-                                    <p class="warning">Le format *.mkv n'est pas pris en charge par
+                                    <p class="warning">Le format *.mp4 n'est pas pris en charge par
                                         votre navigateur</p>
                                 </video>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!---------------------->
 
+                <!-- PROJECT : FIGURE -->
+                <button class="row no-gutters bg-light position-relative" data-toggle="modal"
+                    data-target="#modal-Figures">
+                    <div class="col-md-3 mb-md-0 p-md-2">
+                        <img src="img/banner-Figures.png" class="w-100" alt="Figures">
+                    </div>
+                    <div class="col-md-9 position-static p-1 pl-md-0">
+                        <h5 class="mt-0">Figures</h5>
+                        <p>Une application de quizz faite sous Unity pour permettre aux élèves de
+                            secondaire d'apprendre les figures de style au travers des figures
+                            politiques.</p>
+                    </div>
+                </button>
+                <br>
                 <div class="modal fade" id="modal-Figures" tabindex="-1" role="dialog"
                     aria-labelledby="modal-Figure-label" aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
@@ -450,7 +472,43 @@
                         </div>
                     </div>
                 </div>
-                <!-- End Modals -->
+                <!---------------------->
+
+                <h3 class="mb-2">2018</h3>
+
+                <!-- PROJECT : SPACE JOURNEY -->
+                <button class="row no-gutters bg-light position-relative"
+                    onclick="window.open('https://github.com/Jarkfander/SpaceJourney')">
+                    <div class="col-md-3 mb-md-0 p-md-2">
+                        <img src="img/banner-SpaceJourney.png" class="w-100" alt="Space Journey">
+                    </div>
+                    <div class="col-md-9 position-static p-1 pl-md-0">
+                        <h5 class="mt-0">A space journey</h5>
+                        <p>Un prototype de jeu d'exploration spatiale avec une physique de vaisseau où
+                            l'on peut tirer
+                            sur des asteroïdes et explorer la surface d'une planète.</p>
+                    </div>
+                </button>
+                <br>
+                
+
+                <h3 class="mb-2">2017</h3>
+
+                <button class="row no-gutters bg-light position-relative"
+                    onclick="window.open('https://gamagora.itch.io/the-light')">
+                    <div class="col-md-6 mb-md-0 p-md-4">
+                        <img src="img/banner-TheLight.png" class="w-100" alt="Logo The Light">
+                    </div>
+                    <div class="col-md-6 position-static p-4 pl-md-0">
+                        <h5 class="mt-0">The light</h5>
+                        <p>Un jeu de plateforme 2D réalisé en 3 mois à Gamagora avec une équipe de 16
+                            personnes. On y
+                            controle Legba, une poupée vaudou projetant de la lumière avec ses yeux. Il
+                            doit utiliser
+                            son pouvoir pour résoudre des énigmes et progresser à travers les bois.</p>
+                    </div>
+                </button>
+                <br>
 
             </div>
         </section>
@@ -466,17 +524,6 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
-
-    <script>
-        $(function(){
-          var includes = $('[project-include]');
-          jQuery.each(includes, function(){
-            var file = 'projects/' + $(this).data('include') + '.html';
-            $(this).load(file);
-          });
-        });
-    </script>
-
 </body>
 
 </html>
