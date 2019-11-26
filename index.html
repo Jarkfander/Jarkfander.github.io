@@ -289,17 +289,9 @@
 
                 <h3 class="mb-2">2019</h3>
 
-                <button class="row no-gutters bg-light position-relative" data-toggle="modal"
-                    data-target="#modal-Robot">
-                    <div class="col-md-3 mb-md-0 p-md-2">
-                        <img src="img/banner-Robot.png" class="w-100" alt="Figures">
-                    </div>
-                    <div class="col-md-9 position-static p-1 pl-md-0">
-                        <h5 class="mt-0">Animation et shading d'un robot</h5>
-                        <p>Animation et shading d'un robot réalisé avec OpenGL 3 (asset par quaternius).</p>
-                    </div>
-                </button>
-                <br>
+                <div project-include="robot"></div>
+
+                
 
                 <button class="row no-gutters bg-light position-relative" data-toggle="modal"
                     data-target="#modal-Geometrie">
@@ -412,23 +404,6 @@
                     </div>
                 </div>
 
-                <div class="modal fade" id="modal-Robot" tabindex="-1" role="dialog"
-                    aria-labelledby="modal-Robot-label" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="modal-SpaceJourney-label">Robot</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                Ceci est la modal de Robot
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="modal fade" id="modal-Surfaces" tabindex="-1" role="dialog"
                     aria-labelledby="modal-Surface-label" aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
@@ -483,7 +458,7 @@
     </div>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
@@ -491,6 +466,16 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+
+    <script>
+        $(function(){
+          var includes = $('[project-include]');
+          jQuery.each(includes, function(){
+            var file = 'projects/' + $(this).data('include') + '.html';
+            $(this).load(file);
+          });
+        });
+    </script>
 
 </body>
 
